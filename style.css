@@ -1,0 +1,144 @@
+body {
+    background-image: url("cover.jpg");
+    background-color: #cff4fc;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #005479;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.radio {
+    accent-color: #004165;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.top {
+    font-size: 25px;
+    margin-top: 0;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 20px 7px 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.48);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    border-radius: 16px;
+}
+
+label {
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 0px 0px 20px;
+}
+
+span {
+    padding: 0px 0px 5px 20px;
+    font-size: 20px;
+}
+
+#grade {
+    background-color: #19A7CE;
+    color: #eeeeee;
+    text-shadow: 1px 1px 2px #000000;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+#grade:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #146C94;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+#grade:hover, #grade:focus {
+    color: #fff;
+}
+
+#grade:hover:before, #grade:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+#grade:active {
+    transform: scale(0.9);
+}
+
+#par {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+@media all and (max-width: 540px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .top, #grade, #par, label {
+        font-size: 20px;
+    }
+}
+
+
